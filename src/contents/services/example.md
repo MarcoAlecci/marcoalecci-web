@@ -2,14 +2,9 @@
 id: example
 title: Conference organization
 instances:
-  - name: Publicity Chair and Web Chair
+  - name: Student Volunteer
     conference:
-      name: ECOOP/ISSTA 2023
-      url: https://conf.researchr.org/home/ecoop-issta-2023
-      date: 2023-07-17
-  - name: Publicity Chair and Web Chair
-    conference:
-      name: ECOOP/ISSTA 2023
-      url: https://conf.researchr.org/home/ecoop-issta-2023
-      date: 2023-07-17
+      name: ASE2023
+      url: https://conf.researchr.org/home/ase-2023
+      date: 2023-09-11
 ---
