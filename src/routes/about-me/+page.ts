@@ -20,7 +20,7 @@ export const load = (async () => {
     })
   );
 
-  experiences = experiences.sort((a, b) => new Date(a.experience.period.start).getTime() - new Date(b.experience.period.start).getTime());
+  experiences = experiences.sort((a, b) => new Date(b.experience.period.start).getTime() - new Date(a.experience.period.start).getTime());
 
   let educations = await Promise.all(
     iterableEducations.map(async ([_, resolver]) => {

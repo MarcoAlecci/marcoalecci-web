@@ -1,5 +1,5 @@
 ---
-id: ase2023
+id: conferenceOrganization
 title: Conference organization
 instances:
   - name: Student Volunteer

@@ -7,8 +7,8 @@ period:
 school:
   name: University of Luxembourg
   url: https://www.uni.lu/en/
-  ror: https://ror.org/00240q980
+  ror: https://ror.org/036x5ad56
 course:
   name: CYBERUS, MSc in Cybersecurity
-  url: https://w3id.org/people/lucamartinelli
+  url: https://www.uni.lu/fstm-en/study-programs/erasmus-mundus-joint-master-in-cybersecurity/
 ---

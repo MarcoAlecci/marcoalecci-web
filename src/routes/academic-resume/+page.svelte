@@ -12,7 +12,7 @@
 
 <section>
   <main class="container items-start">
-    <h1>Academic resume</h1>
+    <h1>Academic Resume</h1>
   </main>
 
   {#if data.publications.length > 0}
@@ -37,7 +37,7 @@
 
   {#if data.services.length > 0}
     <main class="container items-start mt-14">
-      <h2>Services</h2>
+      <h2>Service</h2>
 
       <article class="mt-5 w-full flex flex-col gap-2">
         {#each data.services as { service, content }}
@@ -57,7 +57,7 @@
 
   {#if data.teachings.length > 0}
     <main class="container items-start mt-14">
-      <h2>Teachings</h2>
+      <h2>Teaching</h2>
 
       <article class="mt-5 w-full flex flex-col gap-2">
         {#each data.teachings as { teaching, content }}
