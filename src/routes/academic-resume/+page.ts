@@ -20,7 +20,7 @@ export const load = (async () => {
     })
   );
 
-  publications = publications.sort((a, b) => new Date(a.publication.conference.date).getTime() - new Date(b.publication.conference.date).getTime());
+  publications = publications.sort((a, b) => new Date(b.publication.conference.date).getTime() - new Date(a.publication.conference.date).getTime());
 
   let services = await Promise.all(
     iterableServices.map(async ([_, resolver]) => {

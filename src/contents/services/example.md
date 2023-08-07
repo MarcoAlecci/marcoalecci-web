@@ -1,5 +1,5 @@
 ---
-id: example
+id: ase2023
 title: Conference organization
 instances:
   - name: Student Volunteer
