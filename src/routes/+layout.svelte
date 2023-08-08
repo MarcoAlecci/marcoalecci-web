@@ -50,7 +50,7 @@
 <slot />
 
 <footer>
-  <div class="bg-neutral-200 dark:bg-neutral-900 py-6">
+  <div id="contacts" class="bg-neutral-200 dark:bg-neutral-900 py-6">
       <h2>Contact me</h2>
       
       <div class="flex flex-row gap-3 justify-center py-3">
