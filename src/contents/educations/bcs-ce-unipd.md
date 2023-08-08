@@ -12,4 +12,5 @@ course:
   name: Computer Engineering
 grade: 110
 laude: true
+thesis: "Development of a Framework to Generate Virtualization-Based Malware for Android OS"
 ---

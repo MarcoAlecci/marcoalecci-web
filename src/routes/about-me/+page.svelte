@@ -46,9 +46,21 @@
 
       <article class="mt-5 w-full flex flex-col gap-2">
         {#each data.educations as { education, content }}
-          <Card suptitle={formatPeriod(education.period)} title={education.title} subtitle={education.school.name}>
+          <Card suptitle={formatPeriod(education.period)} title={`${education.title} - ${education.course.name}`} subtitle={education.school.name}>
             <div slot="hiddenBody" class="prose max-w-none dark:prose-invert">
               <svelte:component this={content} />
+              {#if education.grade}
+                <p>
+                  Grade: <strong>{education.grade}</strong>
+                  {#if education.laude}
+                    <strong>with Honors</strong>
+                  {/if}
+                  out of 110
+                </p>
+              {/if}
+              {#if education.thesis}
+                <p>Thesis: {education.thesis}</p>
+              {/if} 
             </div>
           </Card>
         {/each}
@@ -56,7 +68,7 @@
     </main>
   {/if}
 
-  {#if data.educations.length > 0}
+  {#if data.awards.length > 0}
     <main class="container items-start mt-14">
       <h2>Awards</h2>
 

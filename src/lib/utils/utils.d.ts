@@ -40,7 +40,7 @@ export interface Education extends Info {
   course: Course;
   grade: number;
   laude: boolean;
-  thesis?: Publication;
+  thesis?: string;
 }
 
 export interface Experience extends Info {

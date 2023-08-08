@@ -11,4 +11,4 @@ supervisors:
     url: https://w3id.org/people/lucamartinelli
 ---
 
-Research in software engineering for software security. Program analysis and static analysis.
+As a member of the TruX Research Group at SnT, I am engaged in advanced research in software engineering, focusing on enhancing software security. My specific emphasis lies in integrating Android static analysis with machine learning methodologies.

@@ -7,7 +7,7 @@ school:
   ror: https://ror.org/00240q980
 ---
 
-The University of Padova offers merit-based awards to the best 1000 students among all the students enrolled at the University of Padua. I won the award three times:
+The University of Padova offers merit-based awards to the best 1000 students (3%) among all the students enrolled at the University of Padua. I won the award three times:
 
 - A.Y. 2017/2018
 - A.Y. 2018/2019

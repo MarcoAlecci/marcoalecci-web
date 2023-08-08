@@ -12,4 +12,5 @@ course:
   name: Computer Engineering
 grade: 110
 laude: true
+thesis: "Assessment of the Blocking Cards Effectiveness in Protecting Mifare Classic Smart Card"
 ---

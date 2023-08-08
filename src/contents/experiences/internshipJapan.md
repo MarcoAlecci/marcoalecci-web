@@ -12,4 +12,4 @@ supervisors:
     url: https://w3id.org/people/lucamartinelli
 ---
 
-MSc Thesis project at Ochiai Lab - YNU
+Engaged in my MSc Thesis Project during my exchange period at Ochiai Lab - YNU, resulting in publication acceptance at RAID2023 conference.
