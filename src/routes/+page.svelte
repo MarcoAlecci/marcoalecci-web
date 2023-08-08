@@ -29,26 +29,4 @@
     </div>
   </section>
   
-  <section id="contacts">
-    <main class="container items-center">
-      <h1>Contact me</h1>
   
-      <div class="flex flex-row gap-3">
-        <a href={me.social.linkedin} target="_blank" rel="noopener noreferrer" title="Linkedin">
-          <i class="text-3xl"><Icon icon="mdi:linkedin" /></i>
-        </a>
-        <a href={me.social.github} target="_blank" rel="noopener noreferrer" title="GitHub">
-          <i class="text-3xl"><Icon icon="mdi:github" /></i>
-        </a>
-        <a href={me.social.orcid} target="_blank" rel="noopener noreferrer" title="ORCID">
-          <i class="text-3xl"><Icon icon="simple-icons:orcid" /></i>
-        </a>
-        <a href={me.social.scholar} target="_blank" rel="noopener noreferrer" title="Google Scholar">
-          <i class="text-3xl"><Icon icon="simple-icons:googlescholar" /></i>
-        </a>
-      </div>
-      <a href="mailto:{me.email}">
-        <span class="span-icon"><i class="text-3xl"><Icon icon="pixelarticons:mail" /></i>{me.email}</span>
-      </a>
-    </main>
-  </section>

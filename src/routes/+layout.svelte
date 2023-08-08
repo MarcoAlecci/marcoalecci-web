@@ -50,18 +50,29 @@
 <slot />
 
 <footer>
-  <div class="bg-neutral-200 dark:bg-neutral-900 py-16">
-    <div class="container overflow-x-auto">
-      <div class="flex gap-12 items-end">
-        <a href="https://uni.lu/" target="_blank" rel="noopener noreferrer" class="opacity-75 hover:opacity-100 transition-opacity ease-in-out duration-300">
-          <UniLuLogo />
+  <div class="bg-neutral-200 dark:bg-neutral-900 py-6">
+      <h2>Contact me</h2>
+      
+      <div class="flex flex-row gap-3 justify-center py-3">
+        <a href="{me.social.linkedin}" target="_blank" rel="noopener noreferrer" title="Linkedin">
+          <i class="text-xl"><Icon icon="mdi:linkedin" /></i>
         </a>
-        <a href="https://uni.lu/snt" target="_blank" rel="noopener noreferrer" class="opacity-75 hover:opacity-100 transition-opacity ease-in-out duration-300">
-          <SntLogo size={69} />
+        <a href="{me.social.github}" target="_blank" rel="noopener noreferrer" title="GitHub">
+          <i class="text-xl"><Icon icon="mdi:github" /></i>
+        </a>
+        <a href="{me.social.orcid}" target="_blank" rel="noopener noreferrer" title="ORCID">
+          <i class="text-xl"><Icon icon="simple-icons:orcid" /></i>
+        </a>
+        <a href="{me.social.scholar}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+          <i class="text-xl"><Icon icon="simple-icons:googlescholar" /></i>
         </a>
       </div>
-    </div>
+      
+      <a href="mailto:{me.email}" class="block mt-1">
+        <span class="span-icon"><i class="text-xl"><Icon icon="pixelarticons:mail" /></i>{me.email}</span>
+      </a>
   </div>
+  
   <div class="py-5">
     <div class="flex justify-between container">
       <a href="https://w3id.org/people/lucamartinelli" target="_blank" rel="noopener noreferrer">

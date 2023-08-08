@@ -2,8 +2,9 @@
 name: Marco
 surname: Alecci
 description:
-  - Ph.D. student
-  - Computer Science and Computer Engineering
+  - Ph.D. Student
+  - University of Luxembourg
+  - Software Engineering & Cybersecurity
 avatar: /marcoalecci.webp
 email: marco.alecci@uni.lu
 social:
