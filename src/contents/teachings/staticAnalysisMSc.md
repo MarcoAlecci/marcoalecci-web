@@ -1,6 +1,6 @@
 ---
-id: staticAnalysisMSc
-title: Introduction to Static Progam Analysis
+id: SDSSA_2023
+title: Static and dynamic software security analysis
 period:
   start: 2023-09-21
   end: 2023-12-21
