@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 id: SDSSA_2023
+=======
+id: staticAnalysisMSc
+>>>>>>> 146267cee125a532f5081fe2806565467bb4563c
 title: Static and dynamic software security analysis
 period:
   start: 2023-09-21
