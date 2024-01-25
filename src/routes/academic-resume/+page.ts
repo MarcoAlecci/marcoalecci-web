@@ -19,6 +19,8 @@ export const load = (async () => {
       return { publication, content: file.default };
     })
   );
+  
+  console.log(publications);
 
   publications = publications.sort((a, b) => new Date(b.publication.conference.date).getTime() - new Date(a.publication.conference.date).getTime());
 
