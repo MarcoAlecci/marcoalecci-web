@@ -14,7 +14,7 @@ coAuthors:
   - name: Luca
     surname: Pajola
 conference:
-  name: RAID2023
+  name: RAID2023 - Hong Kong
   url: https://dl.acm.org/doi/10.1145/3607199.3607227
   date: 2023-10-16
 bibtex: "@inproceedings{10.1145/3607199.3607227,
