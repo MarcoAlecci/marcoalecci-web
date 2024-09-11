@@ -11,7 +11,7 @@ coAuthors:
   - name: Jacques
     surname: Klein
 conference:
-  name: Accepted at ICSE2024 - Lisbon
+  name: ICSE2024 - Lisbon
   url: https://arxiv.org/abs/2310.07290
   date: 2024-04-14
 bibtex: "@misc{alecci2023revisiting,
