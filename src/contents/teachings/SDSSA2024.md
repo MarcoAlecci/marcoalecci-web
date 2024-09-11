@@ -1,5 +1,5 @@
 ---
-id: SDSSA_2023
+id: SDSSA_2024
 title: Static and dynamic software security analysis
 period:
   start: 2024-09-16

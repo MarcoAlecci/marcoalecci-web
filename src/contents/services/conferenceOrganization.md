@@ -3,7 +3,7 @@ id: conferenceOrganization
 title: Conference organization
 instances:
   - name: Web & Publicity Chair
-      conference:
+    conference:
         name: MobileSoft2025
         url: https://conf.researchr.org/home/mobilesoft-2025
         date: 2025-05-26
