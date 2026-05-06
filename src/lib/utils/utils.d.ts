@@ -4,58 +4,74 @@ export interface Info {
   image?: string;
 }
 
-interface Period {
-  start: Date;
-  end?: Date;
+export interface Period {
+  start: string | Date;
+  end?: string | Date;
 }
 
-interface Person {
+export interface Person {
   name: string;
   surname: string;
   url?: string;
   avatar?: string;
 }
 
-interface School {
+export interface School {
   name: string;
   url?: string;
   ror?: string;
   logo?: string;
 }
 
-interface Course {
+export interface Course {
   name: string;
   url?: string;
 }
 
-interface Conference {
+export interface Conference {
   name: string;
   url: string;
-  date: Date;
+  date: string | Date;
+}
+
+export interface Venue {
+  name: string;
+  url?: string;
+  date: string | Date;
+  type?: "Conference" | "Journal" | "Workshop" | "Preprint";
+  location?: string;
+  track?: string;
 }
 
 export interface Education extends Info {
   period: Period;
   school: School;
   course: Course;
-  grade: number;
-  laude: boolean;
+  grade?: number;
+  laude?: boolean;
   thesis?: string;
+  supervisors?: Supervisor[];
+  coSupervisors?: Supervisor[];
+  summary?: string;
 }
 
 export interface Experience extends Info {
   company?: string;
+  companyLogo?: string;
   jobTitle: string;
   supervisors?: Person[];
   period: Period;
+  summary?: string;
 }
 
 export interface Publication extends Info {
   abstract: string;
   coAuthors?: Person[];
-  conference: Conference;
+  venue: Venue;
   bibtex?: string;
   url?: string;
+  pdf?: string;
+  tags?: string[];
 }
 
 interface ServiceExample {
@@ -65,20 +81,64 @@ interface ServiceExample {
 
 export interface Service extends Info {
   instances: ServiceExample[];
+  summary?: string;
 }
 
 export interface Teaching extends Info {
   period: Period;
   school: School;
   course: Course;
+  role?: string;
+  teachingUnits?: number;
 }
 
 export interface Award extends Info {
   school?: School;
-  date?: Date;
+  date?: string | Date;
+  details?: string[];
 }
 
 export interface Post extends Info {
   date: Date;
   abstract: string;
+}
+
+export interface Supervisor extends Person {
+  role?: string;
+}
+
+export interface Student {
+  id: string;
+  name: string;
+  surname: string;
+  level: "Master" | "PhD";
+  program?: string;
+  school?: School;
+  period?: Period;
+  role?: string;
+  topic?: string;
+  supervisors?: Supervisor[];
+  summary?: string;
+}
+
+export interface Statistic {
+  id: string;
+  label: string;
+  value: string | number;
+  href?: string;
+}
+
+export interface ContactInfo {
+  email: string;
+  office: {
+    label: string;
+    address: string;
+    city: string;
+    country: string;
+    mapUrl?: string;
+    mapEmbedUrl?: string;
+  };
+  phone?: string;
+  gpg?: string;
+  profiles: Array<{ label: string; href: string; icon: string }>;
 }

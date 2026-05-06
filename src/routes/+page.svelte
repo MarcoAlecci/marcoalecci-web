@@ -1,32 +1,64 @@
 <script lang="ts">
-    import Icon from "@iconify/svelte";
-  
-    import * as mdMe from "../contents/me.md";
-  
-    const me = mdMe.metadata;
-  </script>
-  
-  <section class="first">
-    <img class="aspect-square object-cover w-36 rounded-full" src={me.avatar} alt="{me.name} {me.surname}" srcset={me.avatar} />
-    <span class="text-2xl span-icon">Hi, I'm {me.name} {me.surname}<i class="text-4xl"><Icon icon="fluent-emoji:waving-hand" /></i></span>
-  
-    <h1 class="mt-5 text-center">
-      {#each me.description as line}
-        <span>{line}</span>
+  import Icon from "@iconify/svelte";
+  import type { PageData } from "./$types";
+  import SectionHeading from "$lib/components/sections/SectionHeading.svelte";
+  import PublicationListItem from "$lib/components/sections/PublicationListItem.svelte";
+  import SocialLinks from "$lib/components/layout/SocialLinks.svelte";
+  import TagPill from "$lib/components/TagPill.svelte";
+
+  export let data: PageData;
+
+  const me = data.profile;
+</script>
+
+<section class="section">
+  <div class="container hero-grid">
+    <aside class="hero-card">
+      <div class="flex h-full flex-col items-center justify-center gap-5 text-center">
+        <img class="aspect-square w-44 rounded-lg object-cover" src={me.avatar} alt="{me.name} {me.surname}" />
+        <div>
+          <h1>{me.name} {me.surname}</h1>
+          <p class="mt-3 text-lg text-muted">
+            {#each me.descriptionLines as line}
+              <span class="block">{line}</span>
+            {/each}
+          </p>
+        </div>
+      </div>
+    </aside>
+    <div class="hero-card">
+      <div class="flex h-full flex-col items-center justify-center gap-4 text-center">
+        <div class="space-y-3 text-sm text-muted">
+          {#each me.bio as paragraph}
+            <p>{paragraph}</p>
+          {/each}
+        </div>
+        <div class="flex flex-wrap justify-center gap-3">
+          {#each me.tags as tag}
+            <TagPill label={tag} variant="accent" />
+          {/each}
+        </div>
+        <div class="mt-1 w-full">
+          <SocialLinks showLabels={true} cardStyle={true} size={22} />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <SectionHeading title="Recent publications" />
+    <ul class="mt-8 space-y-6">
+      {#each data.recentPublications as item}
+        <PublicationListItem publication={item.publication} authors={item.authors} />
       {/each}
-    </h1>
-  
-    <div class="mt-5 flex flex-col w-full md:w-auto md:flex-row gap-2">
-      <a href="/about-me" class="btn">
-        <span class="span-icon"><i class="text-lg"><Icon icon="pixelarticons:info-box" /></i>About me</span>
-      </a>
-      <a href="/academic-resume" class="btn">
-        <span class="span-icon"><i class="text-lg"><Icon icon="pixelarticons:script-text" /></i>Academic resume</span>
-      </a>
-      <a href="#contacts" class="btn">
-        <span class="span-icon"><i class="text-lg"><Icon icon="pixelarticons:mail" /></i>Contact me</span>
+    </ul>
+    <div class="mt-6">
+      <a class="icon-pill" href="/publications">
+        <Icon icon="mdi:arrow-right" />
+        <span>View all publications</span>
       </a>
     </div>
-  </section>
-  
-  
+  </div>
+</section>
