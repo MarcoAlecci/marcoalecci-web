@@ -4,33 +4,31 @@
 
   let checked = false;
 
+  function setTheme(isDark: boolean) {
+    checked = isDark;
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    document.documentElement.classList.toggle("dark", isDark);
+  }
+
   onMount(() => {
     if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-      document.documentElement.classList.add("dark");
-      checked = true;
+      setTheme(true);
     } else {
-      document.documentElement.classList.remove("dark");
-      checked = false;
+      setTheme(false);
     }
   });
 
-  function onChange() {
-    if (checked) {
-      localStorage.theme = "dark";
-      document.documentElement.classList.add("dark");
-    } else {
-      localStorage.theme = "light";
-      document.documentElement.classList.remove("dark");
-    }
+  function onChange(event: Event) {
+    setTheme((event.currentTarget as HTMLInputElement).checked);
   }
 </script>
 
-<div class="flex gap-2 items-center">
+<div class="flex items-center gap-2 text-ink">
   <Icon icon="pixelarticons:sun-alt" />
-  <label for="toggle-theme" class="inline-flex relative items-center cursor-pointer">
-    <input type="checkbox" bind:checked on:change={onChange} id="toggle-theme" class="sr-only peer" />
+  <label class="inline-flex relative items-center cursor-pointer">
+    <input type="checkbox" bind:checked on:change={onChange} class="sr-only peer" />
     <div
-      class="w-9 h-5 bg-neutral-200 rounded-full border border-neutral-300 peer peer-checked:bg-lime-300 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-neutral-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all dark:border-neutral-600"
+      class="w-9 h-5 rounded-full border border-line bg-highlight peer peer-checked:bg-accent peer-checked:after:translate-x-full peer-checked:after:border-surface after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:h-4 after:w-4 after:rounded-full after:border after:border-line after:bg-surface after:transition-all"
     />
   </label>
   <Icon icon="pixelarticons:moon" />

@@ -7,7 +7,9 @@ export const education: Education[] = [
     school: {
       name: "University of Luxembourg, Doctoral School in Science and Engineering (DSSE)",
       url: "https://www.uni.lu/research-en/doctoral-education/dsse/",
-      logo: "/logo/logoUniLu.png"
+      logo: "/logo/logoUniLu.png",
+      location: "Luxembourg",
+      countryCode: "LU"
     },
     period: {
       start: "2022-10-15"
@@ -30,7 +32,9 @@ export const education: Education[] = [
     school: {
       name: "University of Padua - Department of Information Engineering",
       url: "https://dei.unipd.it/",
-      logo: "/logo/logoUniPD.png"
+      logo: "/logo/logoUniPD.png",
+      location: "Padua",
+      countryCode: "IT"
     },
     period: {
       start: "2020-10-01",
@@ -63,7 +67,9 @@ export const education: Education[] = [
     school: {
       name: "University of Padua - Department of Information Engineering",
       url: "https://dei.unipd.it/",
-      logo: "/logo/logoUniPD.png"
+      logo: "/logo/logoUniPD.png",
+      location: "Padua",
+      countryCode: "IT"
     },
     period: {
       start: "2017-10-01",

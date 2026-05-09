@@ -1,6 +1,7 @@
 <script lang="ts">
   import Icon from "@iconify/svelte";
   import { site } from "$lib/config/site";
+  import ToggleTheme from "$lib/components/ToggleTheme.svelte";
 
   let menuOpen = false;
 </script>
@@ -15,6 +16,10 @@
           <a class="nav-link" href={item.href}>{item.label}</a>
         {/each}
       </nav>
+
+      <div class="hidden shrink-0 lg:block">
+        <ToggleTheme />
+      </div>
 
       <button
         class="icon-pill shrink-0 lg:hidden"
@@ -35,6 +40,9 @@
             {item.label}
           </a>
         {/each}
+        <div class="border-t border-line pt-3">
+          <ToggleTheme />
+        </div>
       </nav>
     {/if}
   </div>

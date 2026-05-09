@@ -10,21 +10,19 @@
   const filters = ["All", "Conference", "Journal", "Workshop", "Preprint"];
   let selectedType = "All";
 
+  const authorLine = (item: (typeof data.publications)[number]) => {
+    const authors = item.authors ?? [
+      { name: me.name, surname: me.surname },
+      ...(item.coAuthors ?? [])
+    ];
+
+    return authors.map((author) => `${author.name} ${author.surname}`).join(", ");
+  };
+
   $: filteredPublications =
     selectedType === "All"
       ? data.publications
       : data.publications.filter((publication) => publication.venue.type === selectedType);
-
-  $: filteredGroups = Object.entries(
-    filteredPublications.reduce<Record<string, typeof filteredPublications>>((groups, publication) => {
-      const year = new Date(publication.venue.date).getFullYear().toString();
-      groups[year] = groups[year] ?? [];
-      groups[year].push(publication);
-      return groups;
-    }, {})
-  )
-    .sort(([a], [b]) => Number(b) - Number(a))
-    .map(([year, entries]) => ({ year, entries }));
 </script>
 
 <section class="section">
@@ -45,20 +43,13 @@
         </button>
       {/each}
     </div>
-    <div class="mt-10 space-y-10">
-      {#each filteredGroups as group}
-        <div>
-          <h3 class="text-xl font-sans font-semibold">{group.year}</h3>
-          <ul class="mt-4 space-y-5">
-            {#each group.entries as item}
-              <PublicationListItem
-                publication={item}
-                authors={`${me.name} ${me.surname}${item.coAuthors ? ", " : ""}${item.coAuthors?.map((a) => `${a.name} ${a.surname}`).join(", ")}`}
-              />
-            {/each}
-          </ul>
-        </div>
+    <ul class="mt-10 space-y-5">
+      {#each filteredPublications as item}
+        <PublicationListItem
+          publication={item}
+          authors={authorLine(item)}
+        />
       {/each}
-    </div>
+    </ul>
   </div>
 </section>

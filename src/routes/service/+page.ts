@@ -5,7 +5,16 @@ import type { PageLoad } from "./$types";
 export const load = (async () => {
   const services = service.map((item) => ({
     ...item,
-    groups: groupByYear(item.instances, (instance) => instance.conference.date)
+    instances:
+      item.groupByYear === false
+        ? item.instances
+            .map((instance) => ({
+              ...instance,
+              years: instance.years?.slice().sort((a, b) => b - a)
+            }))
+            .sort((a, b) => (b.years?.[0] ?? 0) - (a.years?.[0] ?? 0))
+        : item.instances,
+    groups: item.groupByYear === false ? [] : groupByYear(item.instances, (instance) => instance.conference.date)
   }));
 
   return {

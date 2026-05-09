@@ -9,7 +9,7 @@
   const linkClass = cardStyle ? "social-card" : "icon-link";
 </script>
 
-<div class={cardStyle ? "grid grid-cols-2 gap-3 sm:grid-cols-4" : "flex flex-wrap items-center gap-3"}>
+<div class={cardStyle ? "grid grid-cols-2 gap-3 sm:grid-cols-4" : "flex flex-wrap items-center justify-center gap-3"}>
   <a class={linkClass} href={site.social.scholar} target="_blank" rel="noopener noreferrer">
     <Icon icon="simple-icons:googlescholar" width={size} height={size} />
     {#if showLabels}

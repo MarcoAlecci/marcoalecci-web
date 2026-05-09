@@ -13,7 +13,7 @@ export const awards: Award[] = [
     ]
   },
   {
-    id: "mille-una-lode",
+    id: "milleUnaLodeAward",
     title: "Mille e una lode Award",
     school: {
       name: "University of Padua",

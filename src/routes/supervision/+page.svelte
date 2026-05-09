@@ -33,12 +33,12 @@
                         <h3 class="mt-2 text-2xl font-sans font-semibold">{item.name} {item.surname}</h3>
                         <div class="mt-3 flex flex-wrap gap-2">
                           <TagPill label={item.role || "Supervision"} variant="accent" />
+                          {#if item.school?.name}
+                            <TagPill label={item.school.name} variant="accent" />
+                          {/if}
                         </div>
                         {#if item.program}
                           <p class="mt-2 text-sm text-muted">Course: {item.program}</p>
-                        {/if}
-                        {#if item.school?.name}
-                          <p class="mt-1 text-sm text-muted">{item.school.name}</p>
                         {/if}
                         {#if item.topic}
                           <p class="mt-3 text-sm text-muted">Topic: {item.topic}</p>
@@ -73,12 +73,14 @@
                           {item.period ? formatPeriod(item.period) : item.level}
                         </p>
                         <h3 class="mt-2 text-2xl font-sans font-semibold">{item.name} {item.surname}</h3>
-                        <p class="mt-1 text-muted">{item.role || "Supervision"}</p>
+                        <div class="mt-3 flex flex-wrap gap-2">
+                          <TagPill label={item.role || "Supervision"} variant="accent" />
+                          {#if item.school?.name}
+                            <TagPill label={item.school.name} variant="accent" />
+                          {/if}
+                        </div>
                         {#if item.program}
                           <p class="mt-2 text-sm text-muted">Course: {item.program}</p>
-                        {/if}
-                        {#if item.school?.name}
-                          <p class="mt-1 text-sm text-muted">{item.school.name}</p>
                         {/if}
                         {#if item.supervisors?.length}
                           <p class="mt-3 text-sm text-muted">

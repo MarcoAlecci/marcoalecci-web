@@ -1,5 +1,5 @@
 export interface Info {
-  id: string;
+  id?: string;
   title: string;
   image?: string;
 }
@@ -21,6 +21,8 @@ export interface School {
   url?: string;
   ror?: string;
   logo?: string;
+  location?: string;
+  countryCode?: string;
 }
 
 export interface Course {
@@ -36,10 +38,12 @@ export interface Conference {
 
 export interface Venue {
   name: string;
-  url?: string;
+  acronym?: string;
+  fullName?: string;
   date: string | Date;
   type?: "Conference" | "Journal" | "Workshop" | "Preprint";
   location?: string;
+  countryCode?: string;
   track?: string;
 }
 
@@ -59,35 +63,41 @@ export interface Experience extends Info {
   company?: string;
   companyLogo?: string;
   jobTitle: string;
+  location?: string;
+  countryCode?: string;
   supervisors?: Person[];
   period: Period;
   summary?: string;
 }
 
 export interface Publication extends Info {
-  abstract: string;
+  authors?: Person[];
   coAuthors?: Person[];
   venue: Venue;
+  note?: string;
+  pages?: string;
   bibtex?: string;
   url?: string;
   pdf?: string;
-  tags?: string[];
 }
 
-interface ServiceExample {
+export interface ServiceExample {
   name: string;
   conference: Conference;
+  years?: number[];
 }
 
 export interface Service extends Info {
   instances: ServiceExample[];
   summary?: string;
+  groupByYear?: boolean;
 }
 
 export interface Teaching extends Info {
   period: Period;
   school: School;
   course: Course;
+  courses?: Course[];
   role?: string;
   teachingUnits?: number;
 }

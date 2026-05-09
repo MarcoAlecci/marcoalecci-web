@@ -2,14 +2,14 @@ import { palette } from "./palette";
 
 export const theme = {
   colors: {
-    bg: palette.neutrals.canvas,
-    surface: palette.neutrals.paper,
-    ink: palette.neutrals.ink,
-    muted: palette.neutrals.muted,
-    accent: palette.greens.deep,
-    accentSoft: palette.greens.soft,
-    line: palette.neutrals.line,
-    highlight: palette.neutrals.highlight
+    bg: palette.background,
+    surface: palette.background,
+    ink: palette.text,
+    muted: palette.text,
+    accent: palette.color1,
+    accentSoft: palette.color1Muted,
+    line: palette.accentBackground,
+    highlight: palette.accentBackground
   },
   fonts: {
     serif: "Consolas",

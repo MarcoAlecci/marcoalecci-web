@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 20" role="img" aria-label="Hong Kong flag">
+  <rect width="30" height="20" fill="#de2910"/>
+  <g fill="#ffffff" transform="translate(15 10)">
+    <ellipse rx="2.2" ry="5" transform="rotate(0) translate(0 -3.7)"/>
+    <ellipse rx="2.2" ry="5" transform="rotate(72) translate(0 -3.7)"/>
+    <ellipse rx="2.2" ry="5" transform="rotate(144) translate(0 -3.7)"/>
+    <ellipse rx="2.2" ry="5" transform="rotate(216) translate(0 -3.7)"/>
+    <ellipse rx="2.2" ry="5" transform="rotate(288) translate(0 -3.7)"/>
+  </g>
+  <circle cx="15" cy="10" r="1.1" fill="#de2910"/>
+</svg>
