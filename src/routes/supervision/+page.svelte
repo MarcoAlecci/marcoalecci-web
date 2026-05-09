@@ -34,7 +34,7 @@
                   {#each group.entries as item}
                     <div class="card flex gap-5">
                       {#if item.school?.logo}
-                        <img class="mt-1 h-14 w-20 shrink-0 object-contain" src={item.school.logo} alt={`${item.school.name} logo`} />
+                        <img class="university-logo mt-1 h-14 w-20 shrink-0 object-contain" src={item.school.logo} alt={`${item.school.name} logo`} />
                       {/if}
                       <div>
                         <p class="text-xs uppercase tracking-[0.25em] text-muted">
@@ -76,7 +76,7 @@
                   {#each group.entries as item}
                     <div class="card flex gap-5">
                       {#if item.school?.logo}
-                        <img class="mt-1 h-14 w-20 shrink-0 object-contain" src={item.school.logo} alt={`${item.school.name} logo`} />
+                        <img class="university-logo mt-1 h-14 w-20 shrink-0 object-contain" src={item.school.logo} alt={`${item.school.name} logo`} />
                       {/if}
                       <div>
                         <p class="text-xs uppercase tracking-[0.25em] text-muted">

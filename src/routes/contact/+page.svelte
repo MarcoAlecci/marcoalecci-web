@@ -29,7 +29,15 @@
         </div>
       </div>
       <div class="card">
-        <h2 class="text-2xl font-sans font-semibold">Office</h2>
+        <div class="flex flex-wrap items-start justify-between gap-3">
+          <h2 class="text-2xl font-sans font-semibold">Office</h2>
+          {#if data.contact.office.mapUrl}
+            <a class="icon-pill" href={data.contact.office.mapUrl} target="_blank" rel="noopener noreferrer">
+              <Icon icon="mdi:map" />
+              <span>Open in Maps</span>
+            </a>
+          {/if}
+        </div>
         <p class="mt-3 text-muted">{data.contact.office.label}</p>
         <p class="mt-2 text-muted">{data.contact.office.address}</p>
         {#if data.contact.office.mapEmbedUrl}
@@ -40,12 +48,6 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-        {/if}
-        {#if data.contact.office.mapUrl}
-          <a class="icon-pill mt-4" href={data.contact.office.mapUrl} target="_blank" rel="noopener noreferrer">
-            <Icon icon="mdi:map" />
-            <span>Open in Maps</span>
-          </a>
         {/if}
       </div>
     </div>

@@ -18,7 +18,7 @@
             {#each group.entries as item}
               <div class="card relative flex gap-5 !pb-8">
                 {#if item.school.logo}
-                  <img class="mt-1 h-14 w-20 shrink-0 object-contain" src={item.school.logo} alt={`${item.school.name} logo`} />
+                  <img class="university-logo mt-1 h-14 w-20 shrink-0 object-contain" src={item.school.logo} alt={`${item.school.name} logo`} />
                 {/if}
                 <div>
                   <p class="text-xs uppercase tracking-[0.25em] text-muted">{formatPeriod(item.period)}</p>

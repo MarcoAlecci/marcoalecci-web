@@ -3,6 +3,8 @@ export const profile = {
   surname: "Alecci",
   title: "Ph.D. Student",
   organization: "University of Luxembourg",
+  headline: "Ph.D. Student @ University of Luxembourg",
+  intro: "I work on practical Android app analysis by combining program analysis, software security, and modern AI methods.",
   descriptionLines: [
     "Ph.D. Student",
     "University of Luxembourg",

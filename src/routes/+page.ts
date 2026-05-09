@@ -1,4 +1,5 @@
 import { profile } from "../content/profile";
+import { contact } from "../content/contact";
 import { publications } from "../content/publications";
 import type { PageLoad } from "./$types";
 
@@ -18,6 +19,7 @@ export const load = (async () => {
 
   return {
     profile,
+    contact,
     recentPublications
   };
 }) satisfies PageLoad;

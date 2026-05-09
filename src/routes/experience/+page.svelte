@@ -14,7 +14,7 @@
       {#each data.experiences as item}
         <div class="card relative flex gap-5 !pb-8">
           {#if item.companyLogo}
-            <img class="mt-1 h-14 w-20 shrink-0 object-contain" src={item.companyLogo} alt={`${item.company || item.title} logo`} />
+            <img class="university-logo mt-1 h-14 w-20 shrink-0 object-contain" src={item.companyLogo} alt={`${item.company || item.title} logo`} />
           {/if}
           <div>
             <p class="text-xs uppercase tracking-[0.25em] text-muted">{formatPeriod(item.period)}</p>

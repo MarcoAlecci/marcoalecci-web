@@ -9,6 +9,7 @@
   export let data: PageData;
 
   const me = data.profile;
+  const contact = data.contact;
 
   const linkBioParagraph = (paragraph: string) => {
     const links = Object.entries(me.bioLinks);
@@ -38,55 +39,61 @@
   };
 </script>
 
-<section class="section">
-  <div class="container hero-grid">
-    <aside class="hero-card">
-      <div class="flex h-full flex-col items-center justify-center gap-5 text-center">
-        <img class="aspect-square w-44 rounded-lg object-cover" src={me.avatar} alt="{me.name} {me.surname}" />
+<section class="py-10 md:py-12">
+  <div class="container grid gap-8 lg:grid-cols-[14rem_minmax(0,1fr)] lg:items-start">
+    <div class="flex flex-col items-center text-center">
+      <img class="aspect-square w-36 rounded-lg object-cover" src={me.avatar} alt="{me.name} {me.surname}" />
+      <div class="mt-6 text-sm text-muted">
         <div>
-          <h1>{me.name} {me.surname}</h1>
-          <p class="mt-3 text-lg text-muted">
-            {#each me.descriptionLines as line}
-              <span class="block">{line}</span>
-            {/each}
-          </p>
+          <p class="text-xs uppercase tracking-[0.25em] text-muted">Email:</p>
+          <a class="mt-1 block break-all text-sm text-link underline decoration-link/40 underline-offset-4 hover:text-link/80" href={`mailto:${contact.email}`}>
+            {contact.email}
+          </a>
         </div>
       </div>
-    </aside>
-    <div class="hero-card">
-      <div class="flex h-full flex-col items-center justify-center gap-4">
-        <div class="space-y-3 text-justify text-sm text-muted">
-          {#each me.bio.split("\n\n") as paragraph}
-            <p>
-              {#each linkBioParagraph(paragraph) as segment}
-                {#if segment.href}
-                  <a class="text-link underline decoration-link/40 underline-offset-4 hover:text-link/80" href={segment.href} target="_blank" rel="noopener noreferrer">
-                    {segment.text}
-                  </a>
-                {:else}
-                  {segment.text}
-                {/if}
-              {/each}
-            </p>
-          {/each}
-        </div>
-        <div class="flex flex-wrap justify-center gap-3">
-          {#each me.tags as tag}
-            <TagPill label={tag} variant="accent" />
-          {/each}
-        </div>
-        <div class="mt-1 w-full">
-          <SocialLinks showLabels={true} cardStyle={true} size={22} />
-        </div>
+    </div>
+    <div class="flex flex-col items-center pt-1 text-center lg:items-start lg:text-left">
+      <div class="flex flex-wrap justify-center gap-3 lg:justify-start">
+        {#each me.tags as tag}
+          <TagPill label={tag} variant="accent" />
+        {/each}
+      </div>
+      <h1 class="mt-5">{me.name} {me.surname}</h1>
+      <p class="mt-4 text-xl text-muted">{me.headline}</p>
+      <div class="mt-5 w-full max-w-[38rem] [&>div]:grid-cols-1 sm:[&>div]:grid-cols-2 lg:[&>div]:grid-cols-4 [&_.social-card]:min-h-[3.25rem] [&_.social-card]:w-full [&_.social-card]:flex-row [&_.social-card]:justify-center lg:[&_.social-card]:justify-start [&_.social-card]:gap-2 [&_.social-card]:px-3 [&_.social-card]:py-2 [&_.social-card]:text-sm">
+        <SocialLinks showLabels={true} cardStyle={true} size={18} />
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container">
+<section class="py-2 md:py-3">
+  <div class="container text-center lg:text-left">
+    <SectionHeading title="About Me" />
+    <div class="mt-5 hero-card">
+      <div class="space-y-4 text-center text-sm text-muted md:text-justify">
+        {#each me.bio.split("\n\n") as paragraph}
+          <p>
+            {#each linkBioParagraph(paragraph) as segment}
+              {#if segment.href}
+                <a class="text-link underline decoration-link/40 underline-offset-4 hover:text-link/80" href={segment.href} target="_blank" rel="noopener noreferrer">
+                  {segment.text}
+                </a>
+              {:else}
+                {segment.text}
+              {/if}
+            {/each}
+          </p>
+        {/each}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-10 md:py-12">
+  <div class="container text-center lg:text-left">
     <SectionHeading title="Recent publications" />
-    <ul class="mt-8 space-y-6">
+    <ul class="mt-8 space-y-6 text-left">
       {#each data.recentPublications as item}
         <PublicationListItem publication={item.publication} authors={item.authors} />
       {/each}

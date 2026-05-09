@@ -127,6 +127,14 @@ p {
   @apply inline-flex min-h-[5.5rem] flex-col items-center justify-center gap-2 rounded-lg border border-line bg-highlight px-4 py-4 text-center text-base font-medium text-ink/80 hover:border-accent/40 hover:bg-accent/10 hover:text-accent;
 }
 
+.university-logo {
+  @apply rounded-md;
+}
+
+html.dark .university-logo {
+  @apply bg-white p-2;
+}
+
 .hero-grid {
   @apply grid items-stretch gap-6 lg:grid-cols-[0.42fr_0.58fr];
 }
