@@ -1,15 +1,5 @@
 # TODO LIST
 
-1] Fix Dark Mode
-
-2] Check Journal Reviews/Services
-
-3] In Publication add/correct Dates/Tracks/Locations
-
-4] Align things in Educations
-
-5] Add students
-
 8] Do a Better Readme also using emoji.
 On top put, how to local test, how to do npm install, push to github in a way that cloudfare can fetch the website.
 Then a section Describing the structure of the repo and where the things are located.

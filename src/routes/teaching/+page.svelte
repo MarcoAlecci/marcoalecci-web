@@ -16,6 +16,10 @@
       return `${months[start.getMonth()]} ${start.getFullYear()} - now`;
     }
 
+    if (start.getMonth() === end.getMonth() && start.getFullYear() === end.getFullYear()) {
+      return `${months[start.getMonth()]} ${start.getFullYear()}`;
+    }
+
     return `${months[start.getMonth()]} ${start.getFullYear()} - ${months[end.getMonth()]} ${end.getFullYear()}`;
   };
 </script>

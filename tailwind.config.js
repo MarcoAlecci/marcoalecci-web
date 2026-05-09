@@ -15,6 +15,7 @@ export default {
         surface: 'rgb(var(--color-surface) / <alpha-value>)',
         accent: 'rgb(var(--color-accent) / <alpha-value>)',
         accentSoft: 'rgb(var(--color-accent-soft) / <alpha-value>)',
+        link: 'rgb(var(--color-link) / <alpha-value>)',
         line: 'rgb(var(--color-line) / <alpha-value>)',
         highlight: 'rgb(var(--color-highlight) / <alpha-value>)'
       }

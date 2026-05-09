@@ -9,6 +9,33 @@
   export let data: PageData;
 
   const me = data.profile;
+
+  const linkBioParagraph = (paragraph: string) => {
+    const links = Object.entries(me.bioLinks);
+    const segments: Array<{ text: string; href?: string }> = [];
+    let rest = paragraph;
+
+    while (rest.length > 0) {
+      const nextLink = links
+        .map(([label, href]) => ({ label, href, index: rest.indexOf(label) }))
+        .filter((link) => link.index >= 0)
+        .sort((a, b) => a.index - b.index || b.label.length - a.label.length)[0];
+
+      if (!nextLink) {
+        segments.push({ text: rest });
+        break;
+      }
+
+      if (nextLink.index > 0) {
+        segments.push({ text: rest.slice(0, nextLink.index) });
+      }
+
+      segments.push({ text: nextLink.label, href: nextLink.href });
+      rest = rest.slice(nextLink.index + nextLink.label.length);
+    }
+
+    return segments;
+  };
 </script>
 
 <section class="section">
@@ -27,10 +54,20 @@
       </div>
     </aside>
     <div class="hero-card">
-      <div class="flex h-full flex-col items-center justify-center gap-4 text-center">
-        <div class="space-y-3 text-sm text-muted">
-          {#each me.bio as paragraph}
-            <p>{paragraph}</p>
+      <div class="flex h-full flex-col items-center justify-center gap-4">
+        <div class="space-y-3 text-justify text-sm text-muted">
+          {#each me.bio.split("\n\n") as paragraph}
+            <p>
+              {#each linkBioParagraph(paragraph) as segment}
+                {#if segment.href}
+                  <a class="text-link underline decoration-link/40 underline-offset-4 hover:text-link/80" href={segment.href} target="_blank" rel="noopener noreferrer">
+                    {segment.text}
+                  </a>
+                {:else}
+                  {segment.text}
+                {/if}
+              {/each}
+            </p>
           {/each}
         </div>
         <div class="flex flex-wrap justify-center gap-3">

@@ -33,7 +33,7 @@ export interface Course {
 export interface Conference {
   name: string;
   url: string;
-  date: string | Date;
+  date?: string | Date;
 }
 
 export interface Venue {

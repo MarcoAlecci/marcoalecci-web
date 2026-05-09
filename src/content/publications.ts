@@ -3,7 +3,7 @@ import type { Publication } from "$lib/utils/utils";
 export const publications: Publication[] = [
   {
     title     : "Secrets Unlocked: Evaluating LLMs for Secrets Detection in Android Apps",
-    url       : "https://arxiv.org/pdf/2510.18601",
+    url       : "https://arxiv.org/abs/2510.18601",
     coAuthors : [
       { name: "Jordan"        , surname: "Samhi"        },
       { name: "Tegawende F."  , surname: "Bissyande"    },
@@ -22,7 +22,7 @@ export const publications: Publication[] = [
   },
   {
     title     : "GeoTwins: Uncovering Hidden Geographic Disparities in Android Apps",
-    url       : "https://arxiv.org/pdf/2511.21151",
+    url       : "https://arxiv.org/abs/2511.21151",
     coAuthors : [
       { name: "Pedro J. R."   , surname: "Jimenez"      },
       { name: "Jordan"        , surname: "Samhi"        },
@@ -160,7 +160,7 @@ export const publications: Publication[] = [
       type        : "Conference",
       location    : "Auckland",
       countryCode : "NZ",
-      track       : "Main Track"
+      track       : "NIER Track"
     },
   },
   {
@@ -204,7 +204,7 @@ export const publications: Publication[] = [
       type        : "Conference",
       location    : "Seoul",
       countryCode : "KR",
-      track       : "Main Track"
+      track       : "NIER Track"
     },
   },
   {
@@ -224,7 +224,7 @@ export const publications: Publication[] = [
       type        : "Conference",
       location    : "Lisbon",
       countryCode : "PT",
-      track       : "Data and Tool Showcase Track"
+      track       : "Data and Tool Track"
     },
   },
   {

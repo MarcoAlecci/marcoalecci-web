@@ -13,6 +13,7 @@
     --color-muted: ${theme.colors.muted};
     --color-accent: ${theme.colors.accent};
     --color-accent-soft: ${theme.colors.accentSoft};
+    --color-link: ${theme.colors.link};
     --color-line: ${theme.colors.line};
     --color-highlight: ${theme.colors.highlight};
   }
@@ -24,6 +25,7 @@
     --color-muted: 245 247 248;
     --color-accent: 90 190 154;
     --color-accent-soft: 32 72 60;
+    --color-link: 125 211 252;
     --color-line: 44 59 70;
     --color-highlight: 23 34 44;
   }`;

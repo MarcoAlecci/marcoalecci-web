@@ -2,6 +2,25 @@ import type { Teaching } from "$lib/utils/utils";
 
 export const teaching: Teaching[] = [
   {
+    id: "DWS_2026",
+    title: "LLM for Android App Analysis",
+    period: {
+      start: "2026-01-01",
+      end: "2026-01-31"
+    },
+    school: {
+      name: "University of Doha for Science and Technology",
+      url: "https://www.udst.edu.qa/AiSeschool",
+      logo: "/logo/udstLogo.webp",
+      location: "Doha",
+      countryCode: "QA"
+    },
+    course: {
+      name: "Lecture at Winter School in AI and SE",
+      url: "https://www.udst.edu.qa/AiSeschool"
+    }
+  },
+  {
     id: "ISPA_2026",
     title: "Introduction to Static Program Analysis",
     period: {

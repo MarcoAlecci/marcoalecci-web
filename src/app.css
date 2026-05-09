@@ -12,6 +12,7 @@
   --color-muted: 87 99 111;
   --color-accent: 14 83 68;
   --color-accent-soft: 202 229 222;
+  --color-link: 37 99 235;
   --color-line: 220 226 231;
   --color-highlight: 239 243 246;
 }
@@ -23,6 +24,7 @@ html.dark {
   --color-muted: 205 213 219;
   --color-accent: 90 190 154;
   --color-accent-soft: 32 72 60;
+  --color-link: 125 211 252;
   --color-line: 44 59 70;
   --color-highlight: 23 34 44;
 }

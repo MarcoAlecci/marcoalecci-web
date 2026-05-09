@@ -1,10 +1,20 @@
 <script lang="ts">
   import type { PageData } from "./$types";
-  import { formatPeriod } from "$lib/utils";
   import SectionHeading from "$lib/components/sections/SectionHeading.svelte";
   import TagPill from "$lib/components/TagPill.svelte";
 
   export let data: PageData;
+
+  const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+  const formatMonth = (x: string | Date) => {
+    const date = new Date(x);
+    return `${months[date.getMonth()]} ${date.getFullYear()}`;
+  };
+
+  const formatMonthPeriod = (period: { start: string | Date; end?: string | Date }) => {
+    return `${formatMonth(period.start)} - ${period.end ? formatMonth(period.end) : "now"}`;
+  };
 </script>
 
 <section class="section">
@@ -28,7 +38,7 @@
                       {/if}
                       <div>
                         <p class="text-xs uppercase tracking-[0.25em] text-muted">
-                          {item.period ? formatPeriod(item.period) : item.level}
+                          {item.period ? formatMonthPeriod(item.period) : item.level}
                         </p>
                         <h3 class="mt-2 text-2xl font-sans font-semibold">{item.name} {item.surname}</h3>
                         <div class="mt-3 flex flex-wrap gap-2">
@@ -70,7 +80,7 @@
                       {/if}
                       <div>
                         <p class="text-xs uppercase tracking-[0.25em] text-muted">
-                          {item.period ? formatPeriod(item.period) : item.level}
+                          {item.period ? formatMonthPeriod(item.period) : item.level}
                         </p>
                         <h3 class="mt-2 text-2xl font-sans font-semibold">{item.name} {item.surname}</h3>
                         <div class="mt-3 flex flex-wrap gap-2">

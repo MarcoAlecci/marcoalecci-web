@@ -8,6 +8,7 @@ export const theme = {
     muted: palette.text,
     accent: palette.color1,
     accentSoft: palette.color1Muted,
+    link: palette.link,
     line: palette.accentBackground,
     highlight: palette.accentBackground
   },
