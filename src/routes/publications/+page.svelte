@@ -19,10 +19,26 @@
     return authors.map((author) => `${author.name} ${author.surname}`).join(", ");
   };
 
+  const groupPublicationsByYear = (items: typeof data.publications) => {
+    const groups = new Map<string, typeof data.publications>();
+
+    items.forEach((item) => {
+      const year = new Date(item.venue.date).getFullYear().toString();
+      const bucket = groups.get(year) ?? [];
+      bucket.push(item);
+      groups.set(year, bucket);
+    });
+
+    return Array.from(groups.entries())
+      .sort((a, b) => Number(b[0]) - Number(a[0]))
+      .map(([year, entries]) => ({ year, entries }));
+  };
+
   $: filteredPublications =
     selectedType === "All"
       ? data.publications
       : data.publications.filter((publication) => publication.venue.type === selectedType);
+  $: publicationGroups = groupPublicationsByYear(filteredPublications);
 </script>
 
 <section class="section">
@@ -43,13 +59,20 @@
         </button>
       {/each}
     </div>
-    <ul class="mt-10 space-y-5">
-      {#each filteredPublications as item}
-        <PublicationListItem
-          publication={item}
-          authors={authorLine(item)}
-        />
+    <div class="mt-10 space-y-10">
+      {#each publicationGroups as group}
+        <section>
+          <h3 class="text-xl font-sans font-semibold">{group.year}</h3>
+          <ul class="mt-4 space-y-5">
+            {#each group.entries as item}
+              <PublicationListItem
+                publication={item}
+                authors={authorLine(item)}
+              />
+            {/each}
+          </ul>
+        </section>
       {/each}
-    </ul>
+    </div>
   </div>
 </section>
