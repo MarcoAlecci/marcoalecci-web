@@ -25,7 +25,7 @@
     --color-muted: 245 247 248;
     --color-accent: 90 190 154;
     --color-accent-soft: 32 72 60;
-    --color-link: 125 211 252;
+    --color-link: 90 190 154;
     --color-line: 44 59 70;
     --color-highlight: 23 34 44;
   }`;

@@ -6,15 +6,15 @@
   --font-serif: "Consolas";
   --font-sans: "Consolas";
 
-  --color-bg: 252 245 238;
-  --color-surface: 255 253 249;
+  --color-bg: 255 253 249;
+  --color-surface: 252 245 238;
   --color-ink: 35 39 33;
   --color-muted: 83 91 78;
-  --color-accent: 65 100 74;
-  --color-accent-soft: 214 225 207;
-  --color-link: 38 91 92;
+  --color-accent: 98 129 65;
+  --color-accent-soft: 224 233 210;
+  --color-link: 98 129 65;
   --color-line: 229 219 208;
-  --color-highlight: 255 253 249;
+  --color-highlight: 252 245 238;
 }
 
 html.dark {
@@ -24,7 +24,7 @@ html.dark {
   --color-muted: 205 213 219;
   --color-accent: 90 190 154;
   --color-accent-soft: 32 72 60;
-  --color-link: 125 211 252;
+  --color-link: 90 190 154;
   --color-line: 44 59 70;
   --color-highlight: 23 34 44;
 }
