@@ -9,10 +9,11 @@ export const load = (async () => {
     .sort((a, b) => new Date(b.venue.date).getTime() - new Date(a.venue.date).getTime());
 
   const recentPublications = sorted.slice(0, 5).map((item) => {
-    const authors = [
-      `${profile.name} ${profile.surname}`,
-      ...(item.coAuthors || []).map((a) => `${a.name} ${a.surname}`)
-    ].join(", ");
+    const publicationAuthors = item.authors ?? [
+      { name: profile.name, surname: profile.surname },
+      ...(item.coAuthors ?? [])
+    ];
+    const authors = publicationAuthors.map((author) => `${author.name} ${author.surname}`).join(", ");
 
     return { publication: item, authors };
   });

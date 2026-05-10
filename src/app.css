@@ -6,15 +6,15 @@
   --font-serif: "Consolas";
   --font-sans: "Consolas";
 
-  --color-bg: 245 247 248;
-  --color-surface: 255 255 255;
-  --color-ink: 18 28 36;
-  --color-muted: 87 99 111;
-  --color-accent: 14 83 68;
-  --color-accent-soft: 202 229 222;
-  --color-link: 37 99 235;
-  --color-line: 220 226 231;
-  --color-highlight: 239 243 246;
+  --color-bg: 252 245 238;
+  --color-surface: 255 253 249;
+  --color-ink: 35 39 33;
+  --color-muted: 83 91 78;
+  --color-accent: 65 100 74;
+  --color-accent-soft: 214 225 207;
+  --color-link: 38 91 92;
+  --color-line: 229 219 208;
+  --color-highlight: 255 253 249;
 }
 
 html.dark {
@@ -95,8 +95,17 @@ p {
   @apply bg-highlight border border-line rounded-lg px-6 py-5;
 }
 
+.publication-card {
+  @apply bg-surface border border-line rounded-lg px-6 py-5 shadow-sm;
+  box-shadow: 0 10px 24px rgba(35, 39, 33, 0.05);
+}
+
 .icon-pill {
-  @apply inline-flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium;
+  @apply inline-flex items-center gap-2 rounded-full border border-line bg-surface px-4 py-2 text-sm font-medium hover:border-accent/40 hover:bg-accent/10 hover:text-accent;
+}
+
+.button-on-card {
+  @apply bg-bg;
 }
 
 .tag {
@@ -124,7 +133,15 @@ p {
 }
 
 .social-card {
-  @apply inline-flex min-h-[5.5rem] flex-col items-center justify-center gap-2 rounded-lg border border-line bg-highlight px-4 py-4 text-center text-base font-medium text-ink/80 hover:border-accent/40 hover:bg-accent/10 hover:text-accent;
+  @apply inline-flex min-h-[5.5rem] flex-col items-center justify-center gap-2 rounded-lg border border-line bg-surface px-4 py-4 text-center text-base font-medium text-ink/80 hover:border-accent/40 hover:bg-accent/10 hover:text-accent;
+}
+
+.social-card-on-card {
+  @apply bg-bg;
+}
+
+.social-action {
+  @apply inline-flex min-h-[3.25rem] items-center justify-center gap-2 rounded-lg border border-line bg-bg px-4 py-2 text-sm font-medium text-ink/80 hover:border-accent/40 hover:bg-accent/10 hover:text-accent;
 }
 
 .university-logo {

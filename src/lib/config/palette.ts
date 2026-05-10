@@ -1,9 +1,12 @@
 export const palette = {
-  background: "255 255 255",
-  accentBackground: "245 247 248",
-  text: "18 28 36",
-  color1: "14 83 68",
-  color1Highlight: "10 64 52",
-  color1Muted: "202 229 222",
-  link: "37 99 235"
+  background: "252 245 238",
+  surface: "255 253 249",
+  accentBackground: "255 253 249",
+  line: "229 219 208",
+  text: "35 39 33",
+  mutedText: "83 91 78",
+  color1: "65 100 74",
+  color1Highlight: "48 76 55",
+  color1Muted: "214 225 207",
+  link: "38 91 92"
 };

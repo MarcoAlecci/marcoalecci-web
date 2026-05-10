@@ -16,7 +16,7 @@ export const teaching: Teaching[] = [
       countryCode: "QA"
     },
     course: {
-      name: "Lecture at Winter School in AI and SE",
+      name: "Lecture at: UDST - Winter School in AI and SE",
       url: "https://www.udst.edu.qa/AiSeschool"
     }
   },

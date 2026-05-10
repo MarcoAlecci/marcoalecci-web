@@ -18,7 +18,7 @@
     : `${publication.venue.fullName || publication.venue.name} [${venueAcronym}]`;
 </script>
 
-<li class="card-soft relative !pb-8">
+<li class="publication-card relative !pb-8">
   <div class="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
     <div class="min-w-0 flex-1">
       <div class="mt-3 flex flex-wrap gap-2">
@@ -39,7 +39,7 @@
     </div>
     {#if publication.url}
       <a
-        class="icon-pill self-start shrink-0 md:mt-3"
+        class="social-action self-start shrink-0 md:mt-3"
         href={publication.url}
         target="_blank"
         rel="noopener noreferrer"

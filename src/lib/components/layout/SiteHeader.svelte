@@ -6,7 +6,7 @@
   let menuOpen = false;
 </script>
 
-<header class="sticky top-0 z-50 border-b border-line/70 bg-bg/80 backdrop-blur">
+<header class="sticky top-0 z-50 border-b border-line/70 bg-surface/90 backdrop-blur">
   <div class="mx-auto w-full max-w-[94rem] px-4 py-3 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between gap-4">
       <a href="/" class="whitespace-nowrap font-sans text-xl font-semibold">{site.name}</a>

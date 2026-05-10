@@ -39,7 +39,7 @@
   };
 </script>
 
-<section class="py-10 md:py-12">
+<section class="pt-10 pb-4 md:pt-12 md:pb-5">
   <div class="container grid gap-8 lg:grid-cols-[14rem_minmax(0,1fr)] lg:items-start">
     <div class="flex flex-col items-center text-center">
       <img class="aspect-square w-36 rounded-lg object-cover" src={me.avatar} alt="{me.name} {me.surname}" />
@@ -53,13 +53,13 @@
       </div>
     </div>
     <div class="flex flex-col items-center pt-1 text-center lg:items-start lg:text-left">
-      <div class="flex flex-wrap justify-center gap-3 lg:justify-start">
+      <h1>{me.name} {me.surname}</h1>
+      <p class="mt-4 text-xl text-muted">{me.headline}</p>
+      <div class="mt-4 flex flex-wrap justify-center gap-3 lg:justify-start">
         {#each me.tags as tag}
           <TagPill label={tag} variant="accent" />
         {/each}
       </div>
-      <h1 class="mt-5">{me.name} {me.surname}</h1>
-      <p class="mt-4 text-xl text-muted">{me.headline}</p>
       <div class="mt-5 w-full max-w-[38rem] [&>div]:grid-cols-1 sm:[&>div]:grid-cols-2 lg:[&>div]:grid-cols-4 [&_.social-card]:min-h-[3.25rem] [&_.social-card]:w-full [&_.social-card]:flex-row [&_.social-card]:justify-center lg:[&_.social-card]:justify-start [&_.social-card]:gap-2 [&_.social-card]:px-3 [&_.social-card]:py-2 [&_.social-card]:text-sm">
         <SocialLinks showLabels={true} cardStyle={true} size={18} />
       </div>
@@ -67,7 +67,7 @@
   </div>
 </section>
 
-<section class="py-2 md:py-3">
+<section class="py-0">
   <div class="container text-center lg:text-left">
     <SectionHeading title="About Me" />
     <div class="mt-5 hero-card">
@@ -90,7 +90,7 @@
   </div>
 </section>
 
-<section class="py-10 md:py-12">
+<section class="pt-6 pb-10 md:pt-7 md:pb-12">
   <div class="container text-center lg:text-left">
     <SectionHeading title="Recent publications" />
     <ul class="mt-8 space-y-6 text-left">

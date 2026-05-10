@@ -21,7 +21,7 @@
         <h3 class="mt-8 text-xl font-sans font-semibold">Profiles</h3>
         <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {#each data.contact.profiles as profile}
-            <a class="social-card" href={profile.href} target="_blank" rel="noopener noreferrer">
+            <a class="social-card social-card-on-card" href={profile.href} target="_blank" rel="noopener noreferrer">
               <Icon icon={profile.icon} width="22" height="22" />
               <span>{profile.label}</span>
             </a>
@@ -32,7 +32,7 @@
         <div class="flex flex-wrap items-start justify-between gap-3">
           <h2 class="text-2xl font-sans font-semibold">Office</h2>
           {#if data.contact.office.mapUrl}
-            <a class="icon-pill" href={data.contact.office.mapUrl} target="_blank" rel="noopener noreferrer">
+            <a class="icon-pill button-on-card" href={data.contact.office.mapUrl} target="_blank" rel="noopener noreferrer">
               <Icon icon="mdi:map" />
               <span>Open in Maps</span>
             </a>
