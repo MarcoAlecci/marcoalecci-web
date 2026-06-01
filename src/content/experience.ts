@@ -2,18 +2,33 @@ import type { Experience } from "$lib/utils/utils";
 
 export const experiences: Experience[] = [
   {
-    id: "phd",
-    title: "Doctoral Researcher",
-    jobTitle: "Doctoral Researcher",
-    company: "Trux Research Group, SnT, University of Luxembourg",
+    id: "researchAssociateTrux",
+    title: "Research Associate",
+    jobTitle: "Research Associate",
+    company: "TruX Research Group, SnT, University of Luxembourg",
     companyLogo: "/logo/logoUniLu.png",
     location: "Luxembourg",
     countryCode: "LU",
     period: {
-      start: "2022-10-15"
+      start: "2026-06-01"
     },
     summary:
-      "As a member of the TruX Research Group at SnT, I am engaged in advanced research in software engineering, focusing on enhancing software security. My specific emphasis lies in integrating Android static analysis with machine learning methodologies."
+      "As a Research Associate in the TruX Research Group, I conduct research at the intersection of software engineering, cybersecurity, and AI. I also supervise students and collaborate with researchers on software security and software engineering projects."
+  },
+  {
+    id: "phd",
+    title: "Doctoral Researcher",
+    jobTitle: "Doctoral Researcher",
+    company: "TruX Research Group, SnT, University of Luxembourg",
+    companyLogo: "/logo/logoUniLu.png",
+    location: "Luxembourg",
+    countryCode: "LU",
+    period: {
+      start: "2022-10-15",
+      end: "2026-05-31"
+    },
+    summary:
+      "As a Doctoral Researcher in the TruX Research Group, I conducted research in software engineering and software security. I also contributed to teaching activities for the Master in Computer Science and Cybersecurity."
   },
   {
     id: "internshipUnipd",

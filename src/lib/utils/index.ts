@@ -8,7 +8,12 @@ export const formatDate = (x: string | Date) => {
 };
 
 export const formatPeriod = (x: Period) => {
-  return `${formatDate(x.start)} - ${x.end ? formatDate(x.end) : "now"}`;
+  const formatMonthYear = (date: string | Date) => {
+    const d = new Date(date);
+    return d.toLocaleDateString("en-US", { month: "long", year: "numeric" });
+  };
+
+  return `${formatMonthYear(x.start)} - ${x.end ? formatMonthYear(x.end) : "now"}`;
 };
 
 export const groupByYear = <T>(items: T[], getDate: (item: T) => string | Date | undefined) => {

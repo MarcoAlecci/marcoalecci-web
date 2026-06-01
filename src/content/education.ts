@@ -12,12 +12,13 @@ export const education: Education[] = [
       countryCode: "LU"
     },
     period: {
-      start: "2022-10-15"
+      start: "2022-10-15",
+      end: "2026-05-22"
     },
     course: {
       name: "Doctoral program in Computer Science and Computer Engineering (DPCSCE)"
     },
-    thesis: "Context is Key: Combining Static Analysis and AI for Practical Android App Analysis",
+    thesis: "Context Is Key: Combining Static Analysis and AI for Actionable Android App Analysis",
     supervisors: [
       {
         name: "Jacques",
