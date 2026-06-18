@@ -19,7 +19,7 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
       role: "Master Thesis",
       topic: "Analysis and Comparison of European and Russian Android Apps"
     },
-     {
+    {
       id: "aslan-kazimov",
       name: "Aslan",
       surname: "Kazimov",
@@ -35,7 +35,59 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
       },
       role: "Research Internship",
       topic: "Mobile App Market Exploration And Integration into AndroZoo"
+    },
+    {
+      id: "marnix-van-denwijngaert",
+      name: "Marnix",
+      surname: "Van DenWijngaert",
+      level: "Master",
+      school: {
+        name: "University of Luxembourg",
+        url: "https://www.uni.lu/en/",
+        logo: "/logo/logoUniLu.png"
+      },
+      period: {
+        start: "2024-05-01",
+        end: "2024-07-31"
+      },
+      role: "Student Job",
+      program: "MSc in Computer Science"
+    },
+    {
+      id: "benjamin-tawiah",
+      name: "Benjamin",
+      surname: "Tawiah",
+      level: "Master",
+      school: {
+        name: "University of Luxembourg",
+        url: "https://www.uni.lu/en/",
+        logo: "/logo/logoUniLu.png"
+      },
+      period: {
+        start: "2024-05-01",
+        end: "2024-07-31"
+      },
+      role: "Student Job",
+      program: "MSc in Computer Science"
     }
   ],
-  phd: []
+  phd: [
+    {
+      id: "yidan-wang",
+      name: "Yidan",
+      surname: "Wang",
+      level: "PhD",
+      school: {
+        name: "University of Luxembourg",
+        url: "https://www.uni.lu/en/",
+        logo: "/logo/logoUniLu.png"
+      },
+      period: {
+        start: "2026-03-01"
+      },
+      role: "Ph.D. Student",
+      topic: "Malicious payload localization and activation in Android apps",
+      summary: "Official supervisor: Prof. Jacques Klein"
+    }
+  ]
 };

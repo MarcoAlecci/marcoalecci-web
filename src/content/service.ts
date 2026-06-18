@@ -8,6 +8,22 @@ export const service: Service[] = [
       {
         name       : "PC Member",
         conference : {
+          name : "RASE 2026 [ASE]",
+          url  : "https://conf.researchr.org/home/ase-2026",
+          date : "2026-11-01"
+        }
+      },
+      {
+        name       : "PC Member",
+        conference : {
+          name : "SECUTE 2026 [ESORICS]",
+          url  : "https://esorics2026.sciencesconf.org/",
+          date : "2026-09-21"
+        }
+      },
+      {
+        name       : "PC Member",
+        conference : {
           name : "STATIC 2026 [ICSE]",
           url  : "https://conf.researchr.org/home/icse-2026/static-2026",
           date : "2026-04-18"
@@ -37,6 +53,22 @@ export const service: Service[] = [
     groupByYear : false,
     instances   : [
 
+      {
+        name       : "Reviewer",
+        years      : [2026],
+        conference : {
+          name : "[TDSC] - IEEE Transactions on Dependable and Secure Computing",
+          url  : "https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=8858",
+        }
+      },
+      {
+        name       : "Reviewer",
+        years      : [2026],
+        conference : {
+          name : "[CSUR] - ACM Computing Surveys",
+          url  : "https://dl.acm.org/journal/csur",
+        }
+      },
       {
         name       : "Reviewer",
         years      : [2024, 2025, 2026],
@@ -105,6 +137,100 @@ export const service: Service[] = [
           name : "ASE 2023",
           url  : "https://conf.researchr.org/home/ase-2023",
           date : "2023-09-11"
+        }
+      }
+    ]
+  },
+  {
+    id        : "subReviewer",
+    title     : "SubReviewer",
+    instances : [
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ASE 2026",
+          url  : "https://conf.researchr.org/home/ase-2026",
+          date : "2026-05-10"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "Data4SoftSec 2026",
+          url  : "https://conf.researchr.org/home/icse-2026/data4softsec-2026",
+          date : "2026-03-10"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ISSTA 2026",
+          url  : "https://conf.researchr.org/home/issta-2026",
+          date : "2026-02-11"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "FSE 2026",
+          url  : "https://conf.researchr.org/home/fse-2026",
+          date : "2025-10-30"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ASE 2025",
+          url  : "https://conf.researchr.org/home/ase-2025",
+          date : "2025-07-14"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ACL ARR 2025",
+          url  : "https://aclrollingreview.org/",
+          date : "2025-06-17"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ISSTA 2025",
+          url  : "https://conf.researchr.org/home/issta-2025",
+          date : "2024-11-27"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ICSE 2025",
+          url  : "https://conf.researchr.org/home/icse-2025",
+          date : "2024-09-19"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ISSTA 2024",
+          url  : "https://conf.researchr.org/home/issta-2024",
+          date : "2024-01-25"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ISSTA 2023",
+          url  : "https://conf.researchr.org/home/issta-2023",
+          date : "2022-12-03"
+        }
+      },
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "SANER 2023",
+          url  : "https://conf.researchr.org/home/saner-2023",
+          date : "2022-11-24"
         }
       }
     ]

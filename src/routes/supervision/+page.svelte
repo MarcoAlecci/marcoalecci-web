@@ -92,6 +92,9 @@
                         {#if item.program}
                           <p class="mt-2 text-sm text-muted">Course: {item.program}</p>
                         {/if}
+                        {#if item.topic}
+                          <p class="mt-3 text-sm text-muted">Topic: {item.topic}</p>
+                        {/if}
                         {#if item.supervisors?.length}
                           <p class="mt-3 text-sm text-muted">
                             Supervisors: {item.supervisors.map((s) => `${s.name} ${s.surname}${s.role ? ` (${s.role})` : ""}`).join(", ")}
