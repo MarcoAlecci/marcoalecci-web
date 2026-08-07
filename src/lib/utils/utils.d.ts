@@ -68,6 +68,8 @@ export interface Experience extends Info {
   supervisors?: Person[];
   period: Period;
   summary?: string;
+  summaryLink?: { label: string; href: string };
+  summaryAfterLink?: string;
 }
 
 export interface Publication extends Info {

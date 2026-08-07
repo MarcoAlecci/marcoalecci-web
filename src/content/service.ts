@@ -16,7 +16,7 @@ export const service: Service[] = [
       {
         name       : "PC Member",
         conference : {
-          name : "SECUTE 2026 [ESORICS]",
+          name : "SECUTE 2026 [ASE]",
           url  : "https://esorics2026.sciencesconf.org/",
           date : "2026-09-21"
         }
@@ -145,6 +145,14 @@ export const service: Service[] = [
     id        : "subReviewer",
     title     : "SubReviewer",
     instances : [
+      {
+        name       : "SubReviewer",
+        conference : {
+          name : "ICSE 2027",
+          url  : "https://conf.researchr.org/home/icse-2027",
+          date : "2027-04-25"
+        }
+      },
       {
         name       : "SubReviewer",
         conference : {

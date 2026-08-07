@@ -14,7 +14,8 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
         logo: "/logo/logoUniLu.png"
       },
       period: {
-        start: "2026-02-01"
+        start: "2026-02-01",
+        end: "2026-07-31"
       },
       role: "Master Thesis",
       topic: "Analysis and Comparison of European and Russian Android Apps"
@@ -31,7 +32,8 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
         logo: "/logo/logoUniLu.png"
       },
       period: {
-        start: "2026-02-01"
+        start: "2026-02-01",
+        end: "2026-07-31"
       },
       role: "Research Internship",
       topic: "Mobile App Market Exploration And Integration into AndroZoo"

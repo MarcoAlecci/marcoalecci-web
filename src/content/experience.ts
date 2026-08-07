@@ -28,7 +28,12 @@ export const experiences: Experience[] = [
       end: "2026-05-31"
     },
     summary:
-      "As a Doctoral Researcher in the TruX Research Group, I conducted research in software engineering and software security. I also contributed to teaching activities for the Master in Computer Science and Cybersecurity."
+      "Conducted research on context-aware and AI-assisted Android app analysis; contributed to teaching activities for Master’s-level courses; and maintained ",
+    summaryLink: {
+      label: "AndroZoo",
+      href: "https://androzoo.uni.lu/"
+    },
+    summaryAfterLink: ", the largest collection of Android apps available to researchers."
   },
   {
     id: "internshipUnipd",

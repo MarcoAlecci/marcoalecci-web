@@ -17,7 +17,7 @@
             {#each group.entries as item}
               <div class="card">
                 <p class="text-xs uppercase tracking-[0.25em] text-muted">
-                  {item.date ? formatDate(item.date) : "Award"}
+                  {item.date ? (typeof item.date === "string" && /^\d{4}$/.test(item.date) ? item.date : formatDate(item.date)) : "Award"}
                 </p>
                 <h3 class="mt-2 text-2xl font-sans font-semibold">{item.title}</h3>
                 {#if item.school?.name}

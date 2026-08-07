@@ -4,6 +4,7 @@ export const awards: Award[] = [
   {
     id: "thesisAwardClusit",
     title: "Thesis Award by Clusit",
+    date: "2023",
     school: {
       name: "Clusit - Italian association for Information Security",
       url: "https://tesi.clusit.it/"

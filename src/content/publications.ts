@@ -21,6 +21,43 @@ export const publications: Publication[] = [
     },
   },
   {
+    title     : "Old Tricks, New Models: How Simple Image Transformations Break Modern AI-based Content Moderation",
+    url       : "https://arxiv.org/abs/2607.28187",
+    coAuthors : [
+      { name: "Francesco"    , surname: "Marchiori"  },
+      { name: "Iyiola Emmanuel", surname: "Olatunji" },
+      { name: "Tegawende F.", surname: "Bissyande"   },
+      { name: "Jacques"      , surname: "Klein"      }
+    ],
+    venue     : {
+      name        : "arXiv",
+      acronym     : "arXiv",
+      fullName    : "arXiv",
+      date        : "2026-07-30",
+      type        : "Preprint"
+    },
+  },
+  {
+    title     : "Evaluating LLMs for Obfuscation Detection and Classification in Android Apps",
+    url       : "https://arxiv.org/abs/2606.14233",
+    authors   : [
+      { name: "Luca"         , surname: "Ferrari"   },
+      { name: "Marco"        , surname: "Alecci"    },
+      { name: "Jordan"       , surname: "Samhi"     },
+      { name: "Tegawende F.", surname: "Bissyande"  },
+      { name: "Jacques"      , surname: "Klein"     },
+      { name: "Mariano"      , surname: "Ceccato"   },
+      { name: "Luca"         , surname: "Verderame" }
+    ],
+    venue     : {
+      name        : "arXiv",
+      acronym     : "arXiv",
+      fullName    : "arXiv",
+      date        : "2026-06-12",
+      type        : "Preprint"
+    },
+  },
+  {
     title     : "GeoTwins: Uncovering Hidden Geographic Disparities in Android Apps",
     url       : "https://arxiv.org/abs/2511.21151",
     coAuthors : [
@@ -91,7 +128,7 @@ export const publications: Publication[] = [
       name        : "TOSEM",
       acronym     : "TOSEM",
       fullName    : "ACM Transactions on Software Engineering and Methodology",
-      date        : "2025-01-01",
+      date        : "2026-01-01",
       type        : "Journal"
     },
   },
