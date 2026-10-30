@@ -300,24 +300,6 @@ export const publications: Publication[] = [
     },
   },
   {
-    title     : "A Dataset of Android Libraries",
-    url       : "https://arxiv.org/abs/2307.12609v1",
-    authors   : [
-      { name: "Jordan", surname: "Samhi" },
-      { name: "Marco", surname: "Alecci" },
-      { name: "Tegawendé F.", surname: "Bissyandé" },
-      { name: "Jacques", surname: "Klein" }
-    ],
-    venue     : {
-      name        : "arXiv",
-      acronym     : "arXiv",
-      fullName    : "arXiv",
-      date        : "2023-07-24",
-      type        : "Preprint"
-    },
-    note      : "Original arXiv version (v1, July 2023)."
-  },
-  {
     title     : "Your Attack Is Too DUMB: Formalizing Attacker Scenarios for Adversarial Transferability",
     url       : "https://dl.acm.org/doi/abs/10.1145/3607199.3607227",
     coAuthors : [
