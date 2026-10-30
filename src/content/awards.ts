@@ -2,6 +2,19 @@ import type { Award } from "$lib/utils/utils";
 
 export const awards: Award[] = [
   {
+    id: "excellentThesisAward2026",
+    title: "Excellent Thesis Award",
+    date: "2026",
+    school: {
+      name: "University of Luxembourg",
+      url: "https://www.uni.lu/en/"
+    },
+    details: [
+      "Awarded for my Ph.D. thesis, 'Context Is Key: Combining Static Analysis and AI for Actionable Android App Analysis'.",
+      "The award recognizes excellent doctoral research and is given to around 10% of Ph.D. candidates."
+    ]
+  },
+  {
     id: "thesisAwardClusit",
     title: "Thesis Award by Clusit",
     date: "2023",
