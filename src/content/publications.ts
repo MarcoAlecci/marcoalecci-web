@@ -97,7 +97,7 @@ export const publications: Publication[] = [
   },
   {
     title     : "TaskFlow: LLMs for Android Taint Specification",
-    url       : "",
+    url       : "https://doi.org/10.1145/3815184",
     coAuthors : [
       { name: "Jordan"        , surname: "Samhi"        },
       { name: "Marc"          , surname: "Miltenberger" },
@@ -109,13 +109,13 @@ export const publications: Publication[] = [
       name        : "TOSEM",
       acronym     : "TOSEM",
       fullName    : "ACM Transactions on Software Engineering and Methodology",
-      date        : "2026-04-27",
+      date        : "2026-05-15",
       type        : "Journal"
     },
   },
   {
     title     : "Replacing Training with Reasoning: Reinterpreting Classic ML Pipelines with LLMs",
-    url       : "",
+    url       : "https://doi.org/10.1145/3786582.3786807",
     coAuthors : [
       { name: "Jordan"        , surname: "Samhi"        },
       { name: "Tegawende F."  , surname: "Bissyande"    },

@@ -22,7 +22,7 @@
             <p class="mt-1 text-muted">{item.jobTitle}{item.company ? ` - ${item.company}` : ""}</p>
             {#if item.summary}
               <p class="mt-4 text-sm text-muted">
-                {item.summary}{#if item.summaryLink}<a class="underline" href={item.summaryLink.href} target="_blank" rel="noopener noreferrer">{item.summaryLink.label}</a>{/if}{item.summaryAfterLink}
+                {item.summary}{#if item.summaryLink}<a class="underline" href={item.summaryLink.href} target="_blank" rel="noopener noreferrer">{item.summaryLink.label}</a>{/if}{item.summaryAfterLink ?? ""}
               </p>
             {/if}
           </div>
