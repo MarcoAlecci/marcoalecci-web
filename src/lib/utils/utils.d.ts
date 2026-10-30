@@ -124,6 +124,7 @@ export interface Student {
   name: string;
   surname: string;
   level: "Master" | "PhD";
+  status?: "Current" | "Completed";
   program?: string;
   school?: School;
   period?: Period;

@@ -17,8 +17,8 @@ export const service: Service[] = [
         name       : "PC Member",
         conference : {
           name : "SECUTE 2026 [ASE]",
-          url  : "https://esorics2026.sciencesconf.org/",
-          date : "2026-09-21"
+          url  : "https://secute-ws.github.io/",
+          date : "2026-10-16"
         }
       },
       {
@@ -95,7 +95,7 @@ export const service: Service[] = [
       },
       {
         name       : "Reviewer",
-        years      : [2024, 2025],
+        years      : [2024, 2025, 2026],
         conference : {
           name : "[SCICO] - Science of Computer Programming",
           url  : "https://www.sciencedirect.com/journal/science-of-computer-programming",

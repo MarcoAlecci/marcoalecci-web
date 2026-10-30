@@ -14,9 +14,10 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
         logo: "/logo/logoUniLu.png"
       },
       period: {
-        start: "2026-02-01",
-        end: "2026-07-31"
+        start: "2026-02-02",
+        end: "2026-07-01"
       },
+      status: "Completed",
       role: "Master Thesis",
       topic: "Analysis and Comparison of European and Russian Android Apps"
     },
@@ -32,11 +33,12 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
         logo: "/logo/logoUniLu.png"
       },
       period: {
-        start: "2026-02-01",
+        start: "2026-02-02",
         end: "2026-07-31"
       },
+      status: "Completed",
       role: "Research Internship",
-      topic: "Mobile App Market Exploration And Integration into AndroZoo"
+      topic: "Android App Market Exploration, AndroZoo Integration, and Split APK Analysis"
     },
     {
       id: "marnix-van-denwijngaert",
@@ -85,9 +87,10 @@ export const supervision: { masters: Student[]; phd: Student[] } = {
         logo: "/logo/logoUniLu.png"
       },
       period: {
-        start: "2026-03-01"
+        start: "2026-03-02"
       },
-      role: "Ph.D. Student",
+      status: "Current",
+      role: "Co-supervision / Advising",
       topic: "Malicious payload localization and activation in Android apps",
       summary: "Official supervisor: Prof. Jacques Klein"
     }

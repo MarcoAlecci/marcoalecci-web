@@ -36,6 +36,9 @@
           {#if index > 0}<strong class="font-semibold text-ink">{primaryAuthor}</strong>{/if}{part}
         {/each}
       </p>
+      {#if publication.note}
+        <p class="mt-2 text-sm text-muted">{publication.note}</p>
+      {/if}
     </div>
     {#if publication.url}
       <a

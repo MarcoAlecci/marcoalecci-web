@@ -43,6 +43,9 @@
                         <h3 class="mt-2 text-2xl font-sans font-semibold">{item.name} {item.surname}</h3>
                         <div class="mt-3 flex flex-wrap gap-2">
                           <TagPill label={item.role || "Supervision"} variant="accent" />
+                          {#if item.status}
+                            <TagPill label={item.status} variant="accent" />
+                          {/if}
                           {#if item.school?.name}
                             <TagPill label={item.school.name} variant="accent" />
                           {/if}
@@ -85,6 +88,9 @@
                         <h3 class="mt-2 text-2xl font-sans font-semibold">{item.name} {item.surname}</h3>
                         <div class="mt-3 flex flex-wrap gap-2">
                           <TagPill label={item.role || "Supervision"} variant="accent" />
+                          {#if item.status}
+                            <TagPill label={item.status} variant="accent" />
+                          {/if}
                           {#if item.school?.name}
                             <TagPill label={item.school.name} variant="accent" />
                           {/if}

@@ -2,6 +2,24 @@ import type { Publication } from "$lib/utils/utils";
 
 export const publications: Publication[] = [
   {
+    title     : "Towards LLM-Enhanced Android Taint Analysis",
+    url       : "https://arxiv.org/abs/2608.24269",
+    authors   : [
+      { name: "Nicholas", surname: "Miazzo" },
+      { name: "Marco", surname: "Alecci" },
+      { name: "Jordan", surname: "Samhi" },
+      { name: "Jacques", surname: "Klein" },
+      { name: "Eleonora", surname: "Losiouk" }
+    ],
+    venue     : {
+      name        : "arXiv",
+      acronym     : "arXiv",
+      fullName    : "arXiv",
+      date        : "2026-08-25",
+      type        : "Preprint"
+    }
+  },
+  {
     title     : "Secrets Unlocked: Evaluating LLMs for Secrets Detection in Android Apps",
     url       : "https://arxiv.org/abs/2510.18601",
     coAuthors : [
@@ -280,6 +298,24 @@ export const publications: Publication[] = [
       date        : "2024-01-22",
       type        : "Journal"
     },
+  },
+  {
+    title     : "A Dataset of Android Libraries",
+    url       : "https://arxiv.org/abs/2307.12609v1",
+    authors   : [
+      { name: "Jordan", surname: "Samhi" },
+      { name: "Marco", surname: "Alecci" },
+      { name: "Tegawendé F.", surname: "Bissyandé" },
+      { name: "Jacques", surname: "Klein" }
+    ],
+    venue     : {
+      name        : "arXiv",
+      acronym     : "arXiv",
+      fullName    : "arXiv",
+      date        : "2023-07-24",
+      type        : "Preprint"
+    },
+    note      : "Original arXiv version (v1, July 2023)."
   },
   {
     title     : "Your Attack Is Too DUMB: Formalizing Attacker Scenarios for Adversarial Transferability",
