@@ -77,7 +77,7 @@ export const publications: Publication[] = [
   },
   {
     title     : "GeoTwins: Uncovering Hidden Geographic Disparities in Android Apps",
-    url       : "https://arxiv.org/abs/2511.21151",
+    url       : "https://doi.org/10.1145/3745756.3809191",
     coAuthors : [
       { name: "Pedro J. R."   , surname: "Jimenez"      },
       { name: "Jordan"        , surname: "Samhi"        },

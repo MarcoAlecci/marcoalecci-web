@@ -10,7 +10,7 @@ export const service: Service[] = [
         conference : {
           name : "RASE 2026 [ASE]",
           url  : "https://conf.researchr.org/home/ase-2026/rase-2026",
-          date : "2026-11-01"
+          date : "2026-10-12"
         }
       },
       {
