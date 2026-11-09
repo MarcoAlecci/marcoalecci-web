@@ -2,6 +2,24 @@ import type { Publication } from "$lib/utils/utils";
 
 export const publications: Publication[] = [
   {
+    title     : "Hardware-Aware Conditional Code in Android Apps",
+    url       : "https://arxiv.org/abs/2611.00296",
+    authors   : [
+      { name: "Marco", surname: "Alecci" },
+      { name: "Jordan", surname: "Samhi" },
+      { name: "Li", surname: "Li" },
+      { name: "Tegawendé F.", surname: "Bissyandé" },
+      { name: "Jacques", surname: "Klein" }
+    ],
+    venue     : {
+      name        : "arXiv",
+      acronym     : "arXiv",
+      fullName    : "arXiv",
+      date        : "2026-10-30",
+      type        : "Preprint"
+    }
+  },
+  {
     title     : "Towards LLM-Enhanced Android Taint Analysis",
     url       : "https://arxiv.org/abs/2608.24269",
     authors   : [

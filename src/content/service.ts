@@ -6,6 +6,14 @@ export const service: Service[] = [
     title       : "Conference PC Member",
     instances   : [
       {
+        name       : "Committee Member",
+        conference : {
+          name : "MSR 2027 — Mining Challenge",
+          url  : "https://2027.msrconf.org/committee/msr-2027-mining-challenge-mining-challenge",
+          date : "2027-04-26"
+        }
+      },
+      {
         name       : "PC Member",
         conference : {
           name : "RASE 2026 [ASE]",
