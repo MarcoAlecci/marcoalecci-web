@@ -2,6 +2,25 @@ import type { Publication } from "$lib/utils/utils";
 
 export const publications: Publication[] = [
   {
+    title     : "MiniZoo: An Evolving Dataset of Mini Apps for the Research Community",
+    url       : "https://arxiv.org/abs/2611.13125",
+    authors   : [
+      { name: "Luca", surname: "Ferrari" },
+      { name: "Marco", surname: "Alecci" },
+      { name: "Jordan", surname: "Samhi" },
+      { name: "Tegawendé F.", surname: "Bissyandé" },
+      { name: "Jacques", surname: "Klein" },
+      { name: "Luca", surname: "Verderame" }
+    ],
+    venue     : {
+      name        : "arXiv",
+      acronym     : "arXiv",
+      fullName    : "arXiv",
+      date        : "2026-11-09",
+      type        : "Preprint"
+    }
+  },
+  {
     title     : "Hardware-Aware Conditional Code in Android Apps",
     url       : "https://arxiv.org/abs/2611.00296",
     authors   : [
